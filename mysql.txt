@@ -1,0 +1,37 @@
+
+
+CREATE DATABASE `Portfolio_3`;
+USE `Portfolio_3`; 
+
+CREATE TABLE `message`(     
+    `id` int PRIMARY KEY AUTO_INCREMENT,  
+    `author` VARCHAR(30),  
+    `subject` text,  
+    `content` text,  
+    `date` datetime
+);
+CREATE TABLE `reply_message`(     
+    `id` int PRIMARY KEY AUTO_INCREMENT,  
+    `author` VARCHAR(30),  
+    `subject` text,  
+    `content` text,  
+    `date` datetime,
+    `reply_id` int
+    
+);
+
+
+INSERT INTO message(author,subject,content) VALUES('小丸子','美食','桃園在地美食');
+INSERT INTO message(author,subject,content) VALUES('小明','旅遊','桃園哪裡好玩');
+INSERT INTO message(author,subject,content) VALUES('小王','美食','新北在地美食');
+INSERT INTO message(author,subject,content) VALUES('小白','閒聊','肯德基蛋塔另外賣?!');
+INSERT INTO message(author,subject,content) VALUES('小黃','遊戲','APEX出手機板');
+
+
+
+
+
+
+
+
+
